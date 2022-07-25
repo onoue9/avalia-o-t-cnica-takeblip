@@ -5,6 +5,6 @@ const requestController = new RequestController();
 
 const requestRoutes = express.Router();
 
-requestRoutes.get('/', (req, res) => requestController.getTheFiveOldestCSharpRepositories(req, res));
+requestRoutes.get('/:id', (req, res) => requestController.getByIdTheCSharpRepository(req, res));
 
 module.exports = { requestRoutes };
