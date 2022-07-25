@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const routes = require('./routes');
 
-const API_PORT = process.env.API_PORT || 3001;
+const { PORT } = process.env || 3001;
 
 class App {
     constructor(app = express()) {
@@ -12,7 +12,7 @@ class App {
     }
 
     async startServer() {
-        this.app.listen(API_PORT, () => console.log(`Server started on port ${API_PORT}`));
+        this.app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
     }
 }
 
