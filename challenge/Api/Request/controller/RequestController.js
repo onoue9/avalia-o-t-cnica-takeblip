@@ -5,8 +5,9 @@ class RequestController {
         this.requestService = requestService;
     }
 
-    async getTheFiveOldestCSharpRepositories(_req, res) {
-        const response = await this.requestService.getTheFiveOldestCSharpRepositories();
+    async getByIdTheCSharpRepository(req, res) {
+        const { id } = req.params;
+        const response = await this.requestService.getByIdTheCSharpRepository(id);
         return res.status(200).json(response);
     }
 }
