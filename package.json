@@ -1,7 +1,17 @@
 {
   "name": "blip-tech-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositório criado para avaliação técnica da Take Blip. Nele criei uma API que realiza a integração entre o chatBot, criado na plataforma da TakeBlip, e a API pública do GitHub. Onde listei os 5 repositórios da linguagem C# mais antigos, ordenados de forma crescente por data de criação.",
+  "author": "Filipe Onoue",
+  "homepage": "https://github.com/onoue9/avaliacao-tecnica-takeblip",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onoue9/avaliacao-tecnica-takeblip"
+  },
+  "engines": {
+    "npm": "8.11.0",
+    "node": "16.16.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node ./challenge/src/Api/server.js",
