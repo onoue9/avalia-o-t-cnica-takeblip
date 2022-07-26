@@ -44,6 +44,37 @@ npm run start
 npm run test
 ```
 
+## Deployment
+
+O deploy da API foi feito no HEROKU.
+Como nós buscamos os repositórios da TakeBlip pela API do GitHub, foi feita uma rota dinâmica onde colocamos o número do repositório que queremos como parametro, por exemplo o repositório 1:
+
+https://take-blip-tech-challenge.herokuapp.com/challenge/1
+
+OU, o 2:
+
+https://take-blip-tech-challenge.herokuapp.com/challenge/2
+
+e assim sucessivamente até o repositório 5.
+
+Também foram adicionadas de forma estática as imagens usadas no carrosel que fala sobre as 6 culturas da TakeBlip, que são:
+
+* Take.Be
+* Take.Team
+* Take.Excellence
+* Take.Charge
+* Take.Simple
+* Take.Higher
+
+onde podemos acessar respectivamente pelas URI's:
+
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeBe.png
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeTeam.png
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeExcellence.png
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeCharge.png
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeSimple.png
+* https://take-blip-tech-challenge.herokuapp.com/images/TakeHigher.png
+
 ## Author
 
 👤 **Filipe Onoue**
